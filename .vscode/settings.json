@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/swan/VGDEV/miSoMadness/Saved": true,
+		"/Users/swan/VGDEV/miSoMadness/Content": true,
+		"/Users/swan/VGDEV/miSoMadness/DerivedDataCache": true,
+		"/Users/swan/VGDEV/miSoMadness/.vscode": true,
+		"/Users/swan/VGDEV/miSoMadness/Intermediate": true
+	}
+}

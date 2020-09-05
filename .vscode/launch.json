@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "miSoMadness (Debug)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadness Mac Debug Build",
+			"program": "/Users/swan/VGDEV/miSoMadness/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadness (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadness Mac DebugGame Build",
+			"program": "/Users/swan/VGDEV/miSoMadness/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadness (Development)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadness Mac Development Build",
+			"program": "/Users/swan/VGDEV/miSoMadness/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadness (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadness Mac Shipping Build",
+			"program": "/Users/swan/VGDEV/miSoMadness/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadness (Test)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadness Mac Test Build",
+			"program": "/Users/swan/VGDEV/miSoMadness/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadnessEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadnessEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/swan/VGDEV/miSoMadness/miSoMadness.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadnessEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadnessEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/swan/VGDEV/miSoMadness/miSoMadness.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "miSoMadnessEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "miSoMadnessEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/swan/VGDEV/miSoMadness/miSoMadness.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/swan/VGDEV/miSoMadness/miSoMadness.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.25"
+		}
+	]
+}
