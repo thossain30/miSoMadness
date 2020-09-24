@@ -2,7 +2,7 @@
 
 #include "miSoMadness/Public/MiSoGameInstance.h"
 #include "OnlineSubsystem.h"
-#include "Kismet/GameplayStatics.h";
+#include "Kismet/GameplayStatics.h"
 #include "Engine/World.h"
 #include "OnlineSessionSettings.h"
 
@@ -53,7 +53,7 @@ void UMiSoGameInstance::OnFindSessionComplete(bool isSuccessful)
 void UMiSoGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type result)
 {
 	UE_LOG(LogTemp, Warning, TEXT("OnJoinSessionComplete, SessionName: %s"), *SessionName.ToString());
-	if (APlayerController* player == UGameplayStatics::GetPlayerController(GetWorld(), 0))
+	if (APlayerController* player = UGameplayStatics::GetPlayerController(GetWorld(), 0))
 	{
 		FString JoinAddress = "";
 		SessionInterface->GetResolvedConnectString(SessionName, JoinAddress);
