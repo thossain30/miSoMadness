@@ -58,10 +58,8 @@ void UMiSoGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionC
 		FString JoinAddress = "";
 		SessionInterface->GetResolvedConnectString(SessionName, JoinAddress);
 		if (JoinAddress != "")
-		{
-			UE_LOG(LogTemp, Warning, TEXT("CreateServer"));
+			UE_LOG(LogTemp, Warning, TEXT("ActualWorkedServer"));
 			player->ClientTravel(JoinAddress, ETravelType::TRAVEL_Absolute);
-		}
 
 	}
 }
