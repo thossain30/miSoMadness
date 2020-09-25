@@ -52,13 +52,14 @@ void UMiSoGameInstance::OnFindSessionComplete(bool isSuccessful)
 
 void UMiSoGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type result)
 {
-	UE_LOG(LogTemp, Warning, TEXT("OnJoinSessionComplete, SessionName: %s"), *SessionName.ToString());
 	if (APlayerController* player = UGameplayStatics::GetPlayerController(GetWorld(), 0))
 	{
+		UE_LOG(LogTemp, Warning, TEXT("OnJoinSessionComplete, SessionName: %s"), *SessionName.ToString());
 		FString JoinAddress = "";
 		SessionInterface->GetResolvedConnectString(SessionName, JoinAddress);
 		if (JoinAddress != "")
 		{
+			UE_LOG(LogTemp, Warning, TEXT("CreateServer"));
 			player->ClientTravel(JoinAddress, ETravelType::TRAVEL_Absolute);
 		}
 
