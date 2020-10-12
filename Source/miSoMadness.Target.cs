@@ -9,6 +9,7 @@ public class miSoMadnessTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
+		bUsesSteam = true;
 
 		ExtraModuleNames.AddRange( new string[] { "miSoMadness" } );
 	}
